@@ -1,0 +1,16 @@
+-I/home/jxt/ModalSoundGen/ModalSound/include/eigen
+-I/home/jxt/ModalSoundGen/ModalSound/src
+-I/home/jxt/ModalSoundGen/ModalSound/src
+-I/opt/intel/mkl/include
+-I/usr/include/QGLViewer
+-I/usr/include
+-I/usr/include
+-I/home/jxt/ModalSoundGen/ModalSound/src/tools
+-I/usr/include
+-I/home/jxt/ModalSoundGen/ModalSound/src/tools
+-I/home/jxt/ModalSoundGen/ModalSound/src/tools
+-DUSE_MKL
+-DEIGEN_USE_MKL_ALL
+-o
+/home/jxt/ModalSoundGen/ModalSound/src/tools/moc_ModesVisParamsDialog.cpp
+/home/jxt/ModalSoundGen/ModalSound/src/tools/ModesVisParamsDialog.h

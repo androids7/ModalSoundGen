@@ -1,0 +1,3 @@
+/home/jxt/ModalSoundGen/MyCode/CMakeFiles/rebuild_cache.dir
+/home/jxt/ModalSoundGen/MyCode/CMakeFiles/main.dir
+/home/jxt/ModalSoundGen/MyCode/CMakeFiles/edit_cache.dir

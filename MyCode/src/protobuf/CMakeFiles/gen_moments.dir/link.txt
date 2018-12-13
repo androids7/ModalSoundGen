@@ -1,0 +1,1 @@
+/usr/bin/g++-6  -O3 -DNDEBUG  -rdynamic CMakeFiles/gen_moments.dir/gen_moments.cpp.o CMakeFiles/gen_moments.dir/sploosh.pb.cc.o CMakeFiles/gen_moments.dir/__/generic/precision_type.cpp.o  -o ../../bin/gen_moments -lboost_system -lboost_filesystem -lboost_program_options -lgsl -lgslcblas -lprotobuf 
