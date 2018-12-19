@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsynthesisFunction.a  CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.o CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
+/usr/bin/ranlib libsynthesisFunction.a

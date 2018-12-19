@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jxt/ModalSoundGen/IsoStuffer/src/config.h
-
 /home/jxt/ModalSoundGen/IsoStuffer/src/generic/null_type.hpp
 
 /home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp
@@ -244,31 +242,31 @@ sstream
 algorithm
 -
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.cpp
+/home/jxt/MyCode/mesh2mesh/DistValProc.cpp
 DistValProc.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.h
+/home/jxt/MyCode/mesh2mesh/DistValProc.h
 string.h
 -
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.h
+/home/jxt/MyCode/mesh2mesh/DistValProc.h
 config.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/config.h
+/home/jxt/MyCode/mesh2mesh/config.h
 unordered_map
 -
 tr1/unordered_map
 -
 geometry/TriangleMesh.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/geometry/TriangleMesh.hpp
+/home/jxt/MyCode/mesh2mesh/geometry/TriangleMesh.hpp
 geometry/OBBTree.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/geometry/OBBTree.hpp
+/home/jxt/MyCode/mesh2mesh/geometry/OBBTree.hpp
 generic/null_type.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/generic/null_type.hpp
+/home/jxt/MyCode/mesh2mesh/generic/null_type.hpp
 rigid/DistFunc.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/rigid/DistFunc.hpp
+/home/jxt/MyCode/mesh2mesh/rigid/DistFunc.hpp
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/IsoStuffer.hpp
+/home/jxt/MyCode/mesh2mesh/IsoStuffer.hpp
 config.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/config.h
+/home/jxt/MyCode/mesh2mesh/config.h
 stdlib.h
 -
 map
@@ -278,9 +276,9 @@ set
 queue
 -
 utils/macros.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/utils/macros.h
+/home/jxt/MyCode/mesh2mesh/utils/macros.h
 utils/arrays.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/utils/arrays.hpp
+/home/jxt/MyCode/mesh2mesh/utils/arrays.hpp
 unordered_map
 -
 unordered_set
@@ -290,35 +288,35 @@ tr1/unordered_map
 tr1/unordered_set
 -
 tables.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/tables.h
+/home/jxt/MyCode/mesh2mesh/tables.h
 OctTree.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.h
+/home/jxt/MyCode/mesh2mesh/OctTree.h
 linearalgebra/Tuple4.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/linearalgebra/Tuple4.hpp
+/home/jxt/MyCode/mesh2mesh/linearalgebra/Tuple4.hpp
 geometry/Point3.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/geometry/Point3.hpp
+/home/jxt/MyCode/mesh2mesh/geometry/Point3.hpp
 geometry/TetMesh.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/geometry/TetMesh.hpp
+/home/jxt/MyCode/mesh2mesh/geometry/TetMesh.hpp
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.cpp
+/home/jxt/MyCode/mesh2mesh/OctTree.cpp
 OctTree.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.h
+/home/jxt/MyCode/mesh2mesh/OctTree.h
 tables.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/tables.h
+/home/jxt/MyCode/mesh2mesh/tables.h
 utils/arrays.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/utils/arrays.hpp
+/home/jxt/MyCode/mesh2mesh/utils/arrays.hpp
 utils/macros.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/utils/macros.h
+/home/jxt/MyCode/mesh2mesh/utils/macros.h
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.h
+/home/jxt/MyCode/mesh2mesh/OctTree.h
 linearalgebra/Tuple3.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/linearalgebra/Tuple3.hpp
+/home/jxt/MyCode/mesh2mesh/linearalgebra/Tuple3.hpp
 utils/arrays.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/utils/arrays.hpp
+/home/jxt/MyCode/mesh2mesh/utils/arrays.hpp
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/config.h
+/home/jxt/MyCode/mesh2mesh/config.h
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/mesh2mesh.cpp
+/home/jxt/MyCode/mesh2mesh/mesh2mesh.cpp
 iostream
 -
 fstream
@@ -328,13 +326,15 @@ string
 boost/program_options.hpp
 -
 IsoStuffer.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/IsoStuffer.hpp
+/home/jxt/MyCode/mesh2mesh/IsoStuffer.hpp
 DistValProc.h
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.h
+/home/jxt/MyCode/mesh2mesh/DistValProc.h
 io/TglMeshReader.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/io/TglMeshReader.hpp
+/home/jxt/MyCode/mesh2mesh/io/TglMeshReader.hpp
 io/TetMeshWriter.hpp
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/io/TetMeshWriter.hpp
+/home/jxt/MyCode/mesh2mesh/io/TetMeshWriter.hpp
 
-/home/jxt/ModalSoundGen/MyCode/mesh2mesh/tables.h
+/home/jxt/MyCode/mesh2mesh/tables.h
+
+mesh2mesh/config.h
 

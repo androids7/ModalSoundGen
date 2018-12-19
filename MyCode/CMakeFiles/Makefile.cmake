@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "cmake/FindMKL.cmake"
   "cmake/FindTBB.cmake"
   "mesh2mesh/CMakeLists.txt"
+  "synthesis/CMakeLists.txt"
   "tet2matrices/CMakeLists.txt"
   "/usr/local/share/cmake-3.9/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
@@ -47,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "mesh2mesh/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tet2matrices/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "synthesis/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -54,4 +56,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "mesh2mesh/CMakeFiles/mesh2meshFunction.dir/DependInfo.cmake"
   "tet2matrices/CMakeFiles/tet2matricesFunction.dir/DependInfo.cmake"
+  "synthesis/CMakeFiles/synthesisFunction.dir/DependInfo.cmake"
   )

@@ -29,7 +29,6 @@ mesh2mesh/CMakeFiles/mesh2meshFunction.dir/OctTree.cpp.o: mesh2mesh/tables.h
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.hpp
 
-mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/config.h
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/geometry/Point3.hpp
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/geometry/Triangle.hpp
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/geometry/TriangleMesh.hpp
@@ -40,6 +39,7 @@ mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/utils/macros.h
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/utils/math.hpp
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/utils/strings.hpp
+mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/io/TglMeshReader.cpp.o: mesh2mesh/config.h
 
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/eig3.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/eig3.cpp
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/eig3.cpp.o: /home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/eig3.h

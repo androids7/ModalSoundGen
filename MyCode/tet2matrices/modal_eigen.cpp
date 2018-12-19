@@ -270,7 +270,7 @@ static void write_eigenvalues(int nev, int nsz,
     for(int vid = 0;vid < nev;++ vid)
     {
         fout.write((const char*)&eval[ids[vid]], sizeof(double));
-        printf("ev#%3d:  %lf %lfHz\n", vid, eval[ids[vid]], sqrt(eval[ids[vid]]/density)*0.5*M_1_PI);
+      //  printf("ev#%3d:  %lf %lfHz\n", vid, eval[ids[vid]], sqrt(eval[ids[vid]]/density)*0.5*M_1_PI);
     }
     // output eigenvectors
     for(int vid = 0;vid < nev;++ vid)
@@ -320,6 +320,7 @@ int modal_eigen(int argc, char* argv[])
         PRINT_ERROR("Two matrices should have the same size.\n");
         exit(1);
     }
+    numEigv =  nrowK-2;
     if ( numEigv <= 0 || numEigv > nrowK-2 )
     {
         PRINT_ERROR("number of eigenvalues is out of range: maximum=%d\n", nrowK-2);

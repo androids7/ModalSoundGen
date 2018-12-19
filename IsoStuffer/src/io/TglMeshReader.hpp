@@ -104,8 +104,8 @@ class MeshObjReader
 
                     if ( ts0.size() > 1 )
                     {
-                        if ( ts0[0] != ts0[1] || ts1[0] != ts1[1] || ts2[0] != ts2[1] )
-                            cerr << "Warinning: Inconsistent file content at Line " << l << "!" << endl;
+                    //    if ( ts0[0] != ts0[1] || ts1[0] != ts1[1] || ts2[0] != ts2[1] )
+                      //      cerr << "Warinning: Inconsistent file content at Line " << l << "!" << endl;
 
                         tgl.push_back(Tuple3ui(carbine::Int(ts0[0])-1,
                                                carbine::Int(ts1[0])-1,

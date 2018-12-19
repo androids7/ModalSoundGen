@@ -50,13 +50,14 @@ static TetMesh<double>*         pmesh     = NULL;
 
 static void clean_up()
 {
+    delete pmesh;
     delete pstuffer;
     delete pdistfunc;
     delete dvproc;
     delete ptglmesh;
 }
 
-TetMesh<double>* mesh2mesh(int argc, char* argv[])
+int  mesh2mesh(int argc, char* argv[])
 {
     namespace po = boost::program_options;
     po::options_description genericOpt("Generic options");
@@ -94,14 +95,14 @@ TetMesh<double>* mesh2mesh(int argc, char* argv[])
     {
         printf("Usage: %s [options] <input obj file> <output tet file>\n", argv[0]);
         cout << cmdOpts << endl;
-        return NULL;
+        return 1;
     }
     if ( !vm.count("files") || vm["files"].as< vector<string> >().size() != 2 ) 
     {
         cerr << "No input/output files are given" << endl;
         printf("Usage: %s [options] <input obj file> <output tet file>\n", argv[0]);
         cout << cmdOpts << endl;
-        return NULL;
+        return 0;
     }
     res = 1 << res;
     const vector<string>& fs = vm["files"].as< vector<string> >();
@@ -124,8 +125,8 @@ TetMesh<double>* mesh2mesh(int argc, char* argv[])
             dvproc->min_point(), alphaL, alphaS, *pdistfunc);
     pmesh = new TetMesh<double>;
     pstuffer->create_mesh(pmesh);
-    TetMeshWriter_Double::write_mesh(fs[1].c_str(), *pmesh);
+    FV_TetMeshWriter_Double::write_mesh(fs[1].c_str(), *pmesh);
 
     clean_up();
-    return pmesh;
+    return 0;
 }

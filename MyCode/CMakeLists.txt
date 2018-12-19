@@ -6,12 +6,18 @@ find_package(Boost 1.48 REQUIRED COMPONENTS
 
 set(INCLUDE_DIR1 /home/jxt/ModalSoundGen/IsoStuffer/src)
 set(INCLUDE_DIR2 /home/jxt/ModalSoundGen/ModalSound/src)
-include_directories(${INCLUDE_DIR1} ${INCLUDE_DIR2})
+
+
 AUX_SOURCE_DIRECTORY(. DIR_SRCS)
 add_subdirectory(mesh2mesh)
 add_subdirectory(tet2matrices)
+add_subdirectory(synthesis)
 
 ADD_EXECUTABLE(main ${DIR_SRCS})
-target_link_libraries(main mesh2meshFunction tet2matricesFunction)
+target_link_libraries(main
+	 mesh2meshFunction
+	 tet2matricesFunction
+	 synthesisFunction
+)
 
 
