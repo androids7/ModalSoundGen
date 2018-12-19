@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/intel/mkl/include -I/home/jxt/ModalSoundGen/MyCode/src 
+CXX_INCLUDES = -I/home/jxt/ModalSoundGen/IsoStuffer/src -I/home/jxt/ModalSoundGen/ModalSound/src 
 

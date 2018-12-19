@@ -1,0 +1,1 @@
+/usr/bin/g++-6   -std=c++11 -O3 -DNDEBUG  -rdynamic   CMakeFiles/isostuffer.dir/io/TglMeshReader.cpp.o CMakeFiles/isostuffer.dir/generic/precision_type.cpp.o CMakeFiles/isostuffer.dir/main.cpp.o CMakeFiles/isostuffer.dir/OctTree.cpp.o CMakeFiles/isostuffer.dir/DistValProc.cpp.o CMakeFiles/isostuffer.dir/linearalgebra/eig3.cpp.o  -o isostuffer -lboost_program_options 

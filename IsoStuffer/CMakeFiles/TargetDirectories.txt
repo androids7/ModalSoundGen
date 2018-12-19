@@ -1,0 +1,8 @@
+/home/jxt/ModalSoundGen/IsoStuffer/CMakeFiles/rebuild_cache.dir
+/home/jxt/ModalSoundGen/IsoStuffer/CMakeFiles/edit_cache.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/edit_cache.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/isostuffer-gui.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/rebuild_cache.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/isostuffer.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/isostuffer-gui_autogen.dir
+/home/jxt/ModalSoundGen/IsoStuffer/src/CMakeFiles/isostuffer_autogen.dir

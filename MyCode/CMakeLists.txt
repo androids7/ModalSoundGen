@@ -1,22 +1,15 @@
 project(modalsound)
 cmake_minimum_required(VERSION 3.0)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-find_package(MKL REQUIRED)
-set(MKL_LIBS ${IOMP5_LIBRARY} ${MKL_LIBRARY_RT} ${MKL_LIBRARY_THREAD}  ${MKL_LIBRARY_ILP64} ${MKL_LIBRARY} ${OPENMP_LIB})
-FIND_PACKAGE(Boost COMPONENTS program_options REQUIRED)
-find_package(TBB REQUIRED)
-include_directories(
-	${MKL_INCLUDE_DIR}
-	${CMAKE_CURRENT_SOURCE_DIR}/src
-	${Boost_INCLUDE_DIRS}
-)
+find_package(Boost 1.48 REQUIRED COMPONENTS
+    "filesystem" "system" "program_options")
 
+set(INCLUDE_DIR1 /home/jxt/ModalSoundGen/IsoStuffer/src)
+set(INCLUDE_DIR2 /home/jxt/ModalSoundGen/ModalSound/src)
+include_directories(${INCLUDE_DIR1} ${INCLUDE_DIR2})
 AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+add_subdirectory(mesh2mesh)
 ADD_EXECUTABLE(main ${DIR_SRCS})
-message("MKL_LIBS:${MKL_LIBS}")
-TARGET_LINK_LIBRARIES(
-	main
-	${MKL_LIBS}
-	${Boost_LIBRARIES}
-	tbb
-)
+target_link_libraries(main mesh2meshFunction)
+
+

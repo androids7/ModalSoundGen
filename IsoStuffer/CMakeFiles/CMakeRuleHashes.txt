@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+7f955424486743330b120cce7ea402cf src/CMakeFiles/isostuffer-gui_autogen
+2a3fc56e59010a5d17d6fa61fd4051d9 src/CMakeFiles/isostuffer_autogen
+4209dd636d539853d78f520d372611b9 src/ui/moc_IsoStufferCanvas.cpp
+e2ea2eef00a36e021a8ad02bce0bc4a0 src/ui/moc_IsoStufferFrame.cpp
+05f4f69a6e25be20114d6666cece0b96 src/ui/moc_ParamsDialog.cpp
+ae6e80a519fba3f0cb82ae2621999ef6 src/ui_IsoStufferFrame.h
+3eaf906ba2f7b847762f999353153565 src/ui_Params.h

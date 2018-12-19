@@ -1,3 +1,6 @@
 /home/jxt/ModalSoundGen/MyCode/CMakeFiles/rebuild_cache.dir
 /home/jxt/ModalSoundGen/MyCode/CMakeFiles/main.dir
 /home/jxt/ModalSoundGen/MyCode/CMakeFiles/edit_cache.dir
+/home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/rebuild_cache.dir
+/home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/mesh2meshFunction.dir
+/home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/edit_cache.dir
