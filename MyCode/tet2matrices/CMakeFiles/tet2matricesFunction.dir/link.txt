@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtet2matricesFunction.a  CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
+/usr/bin/ranlib libtet2matricesFunction.a

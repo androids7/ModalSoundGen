@@ -279,7 +279,7 @@ static void write_eigenvalues(int nev, int nsz,
     fout.close();
 }
 
-int main(int argc, char* argv[])
+int modal_eigen(int argc, char* argv[])
 {
     int n = tbb::task_scheduler_init::default_num_threads();
     PRINT_MSG("%d threads are enabled\n", n);

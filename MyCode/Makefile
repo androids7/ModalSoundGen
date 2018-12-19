@@ -136,6 +136,19 @@ mesh2meshFunction/fast:
 	$(MAKE) -f mesh2mesh/CMakeFiles/mesh2meshFunction.dir/build.make mesh2mesh/CMakeFiles/mesh2meshFunction.dir/build
 .PHONY : mesh2meshFunction/fast
 
+#=============================================================================
+# Target rules for targets named tet2matricesFunction
+
+# Build rule for target.
+tet2matricesFunction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tet2matricesFunction
+.PHONY : tet2matricesFunction
+
+# fast build rule for target.
+tet2matricesFunction/fast:
+	$(MAKE) -f tet2matrices/CMakeFiles/tet2matricesFunction.dir/build.make tet2matrices/CMakeFiles/tet2matricesFunction.dir/build
+.PHONY : tet2matricesFunction/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +186,7 @@ help:
 	@echo "... main"
 	@echo "... edit_cache"
 	@echo "... mesh2meshFunction"
+	@echo "... tet2matricesFunction"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

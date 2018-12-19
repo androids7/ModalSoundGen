@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/jxt/ModalSoundGen/MyCode
 
 # All Build rule for target.
 CMakeFiles/main.dir/all: mesh2mesh/CMakeFiles/mesh2meshFunction.dir/all
+CMakeFiles/main.dir/all: tet2matrices/CMakeFiles/tet2matricesFunction.dir/all
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=1,2 "Built target main"
@@ -76,7 +77,7 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -148,6 +149,61 @@ mesh2mesh/CMakeFiles/mesh2meshFunction.dir/clean:
 
 # clean rule for target.
 clean: mesh2mesh/CMakeFiles/mesh2meshFunction.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory tet2matrices
+
+# Convenience name for "all" pass in the directory.
+tet2matrices/all: tet2matrices/CMakeFiles/tet2matricesFunction.dir/all
+
+.PHONY : tet2matrices/all
+
+# Convenience name for "clean" pass in the directory.
+tet2matrices/clean: tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean
+
+.PHONY : tet2matrices/clean
+
+# Convenience name for "preinstall" pass in the directory.
+tet2matrices/preinstall:
+
+.PHONY : tet2matrices/preinstall
+
+#=============================================================================
+# Target rules for target tet2matrices/CMakeFiles/tet2matricesFunction.dir
+
+# All Build rule for target.
+tet2matrices/CMakeFiles/tet2matricesFunction.dir/all:
+	$(MAKE) -f tet2matrices/CMakeFiles/tet2matricesFunction.dir/build.make tet2matrices/CMakeFiles/tet2matricesFunction.dir/depend
+	$(MAKE) -f tet2matrices/CMakeFiles/tet2matricesFunction.dir/build.make tet2matrices/CMakeFiles/tet2matricesFunction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=10,11,12,13,14 "Built target tet2matricesFunction"
+.PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/all
+
+# Include target in all.
+all: tet2matrices/CMakeFiles/tet2matricesFunction.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tet2matrices/CMakeFiles/tet2matricesFunction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 tet2matrices/CMakeFiles/tet2matricesFunction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 0
+.PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/rule
+
+# Convenience name for target.
+tet2matricesFunction: tet2matrices/CMakeFiles/tet2matricesFunction.dir/rule
+
+.PHONY : tet2matricesFunction
+
+# clean rule for target.
+tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean:
+	$(MAKE) -f tet2matrices/CMakeFiles/tet2matricesFunction.dir/build.make tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean
+.PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean
+
+# clean rule for target.
+clean: tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean
 
 .PHONY : clean
 

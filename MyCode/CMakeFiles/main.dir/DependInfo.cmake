@@ -17,6 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/mesh2meshFunction.dir/DependInfo.cmake"
+  "/home/jxt/ModalSoundGen/MyCode/tet2matrices/CMakeFiles/tet2matricesFunction.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -91,7 +91,14 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: mesh2mesh/libmesh2meshFunction.a
+main: tet2matrices/libtet2matricesFunction.a
+main: /opt/intel/compilers_and_libraries_2017.5.239/linux/compiler/lib/intel64/libiomp5.so
+main: /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_rt.so
+main: /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_thread.so
+main: /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_ilp64.so
+main: /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_core.so
 main: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+main: /usr/lib/x86_64-linux-gnu/libtbb.so
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

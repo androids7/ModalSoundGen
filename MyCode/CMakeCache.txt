@@ -211,6 +211,36 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to OpenMP runtime library
+IOMP5_LIBRARY:FILEPATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/compiler/lib/intel64/libiomp5.so
+
+//Path to a file.
+MKL_INCLUDE_DIR:PATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include
+
+//Path to a library.
+MKL_LIBRARY:FILEPATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_core.so
+
+//Path to a library.
+MKL_LIBRARY_ILP64:FILEPATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_ilp64.so
+
+//Path to a library.
+MKL_LIBRARY_RT:FILEPATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_rt.so
+
+//Path to a library.
+MKL_LIBRARY_SEQ:FILEPATH=MKL_LIBRARY_SEQ-NOTFOUND
+
+//Path to a library.
+MKL_LIBRARY_THREAD:FILEPATH=/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_thread.so
+
+//Path to a file.
+TBB_INCLUDE_DIRS:PATH=/usr/include
+
+//Path to a library.
+TBB_tbb_LIBRARY_DEBUG:FILEPATH=TBB_tbb_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+TBB_tbb_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libtbb.so
+
 //Dependencies for the target
 mesh2meshFunction_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;
 
@@ -219,6 +249,9 @@ modalsound_BINARY_DIR:STATIC=/home/jxt/ModalSoundGen/MyCode
 
 //Value Computed by CMake
 modalsound_SOURCE_DIR:STATIC=/home/jxt/ModalSoundGen/MyCode
+
+//Dependencies for the target
+tet2matricesFunction_LIB_DEPENDS:STATIC=general;/opt/intel/compilers_and_libraries_2017.5.239/linux/compiler/lib/intel64/libiomp5.so;general;/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_rt.so;general;/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_thread.so;general;/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_intel_ilp64.so;general;/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/lib/intel64_lin/libmkl_core.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;tbb;
 
 
 ########################
@@ -339,7 +372,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -380,6 +413,20 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding TBB
+FIND_PACKAGE_MESSAGE_DETAILS_TBB:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libtbb.so][c ][v4.4()]
+//ADVANCED property for variable: IOMP5_LIBRARY
+IOMP5_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MKL_INCLUDE_DIR
+MKL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MKL_LIBRARY
+MKL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_INCLUDE_DIRS
+TBB_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_tbb_LIBRARY_DEBUG
+TBB_tbb_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_tbb_LIBRARY_RELEASE
+TBB_tbb_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=filesystem;program_options;system
 //Last used Boost_INCLUDE_DIR value.

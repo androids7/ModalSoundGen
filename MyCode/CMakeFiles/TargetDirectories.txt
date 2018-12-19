@@ -4,3 +4,6 @@
 /home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/rebuild_cache.dir
 /home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/mesh2meshFunction.dir
 /home/jxt/ModalSoundGen/MyCode/mesh2mesh/CMakeFiles/edit_cache.dir
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/CMakeFiles/rebuild_cache.dir
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/CMakeFiles/tet2matricesFunction.dir
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/CMakeFiles/edit_cache.dir
