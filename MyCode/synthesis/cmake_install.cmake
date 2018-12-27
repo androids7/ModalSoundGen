@@ -1,4 +1,4 @@
-# Install script for directory: /home/jxt/MyCode/synthesis
+# Install script for directory: /home/jxt/ModalSoundGen/MyCode/synthesis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

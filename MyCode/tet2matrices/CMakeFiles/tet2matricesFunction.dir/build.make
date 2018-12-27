@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jxt/MyCode
+CMAKE_SOURCE_DIR = /home/jxt/ModalSoundGen/MyCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jxt/MyCode
+CMAKE_BINARY_DIR = /home/jxt/ModalSoundGen/MyCode
 
 # Include any dependencies generated for this target.
 include tet2matrices/CMakeFiles/tet2matricesFunction.dir/depend.make
@@ -59,16 +59,16 @@ include tet2matrices/CMakeFiles/tet2matricesFunction.dir/flags.make
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o: tet2matrices/CMakeFiles/tet2matricesFunction.dir/flags.make
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o: tet2matrices/extract_matrices.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o -c /home/jxt/MyCode/tet2matrices/extract_matrices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o"
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o -c /home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.cpp
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.i"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/MyCode/tet2matrices/extract_matrices.cpp > CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.cpp > CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.i
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.s"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/MyCode/tet2matrices/extract_matrices.cpp -o CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.cpp -o CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.s
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o.requires:
 
@@ -83,16 +83,16 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o.provides
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o: tet2matrices/CMakeFiles/tet2matricesFunction.dir/flags.make
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o: tet2matrices/modal_eigen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o -c /home/jxt/MyCode/tet2matrices/modal_eigen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o"
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o -c /home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.cpp
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.i"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/MyCode/tet2matrices/modal_eigen.cpp > CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.cpp > CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.i
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.s"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/MyCode/tet2matrices/modal_eigen.cpp -o CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.cpp -o CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.s
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o.requires:
 
@@ -107,16 +107,16 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o.provides.buil
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o: tet2matrices/CMakeFiles/tet2matricesFunction.dir/flags.make
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o: /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o -c /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o"
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o -c /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.i"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp > CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp > CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.i
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.s"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.s
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o.requires:
 
@@ -131,16 +131,16 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSou
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o: tet2matrices/CMakeFiles/tet2matricesFunction.dir/flags.make
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o: /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o -c /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o"
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o -c /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp > CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp > CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s"
-	cd /home/jxt/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && /usr/bin/g++-6 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp -o CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o.requires:
 
@@ -169,9 +169,9 @@ tet2matrices/libtet2matricesFunction.a: tet2matrices/CMakeFiles/tet2matricesFunc
 tet2matrices/libtet2matricesFunction.a: tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
 tet2matrices/libtet2matricesFunction.a: tet2matrices/CMakeFiles/tet2matricesFunction.dir/build.make
 tet2matrices/libtet2matricesFunction.a: tet2matrices/CMakeFiles/tet2matricesFunction.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jxt/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libtet2matricesFunction.a"
-	cd /home/jxt/MyCode/tet2matrices && $(CMAKE_COMMAND) -P CMakeFiles/tet2matricesFunction.dir/cmake_clean_target.cmake
-	cd /home/jxt/MyCode/tet2matrices && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tet2matricesFunction.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jxt/ModalSoundGen/MyCode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libtet2matricesFunction.a"
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && $(CMAKE_COMMAND) -P CMakeFiles/tet2matricesFunction.dir/cmake_clean_target.cmake
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tet2matricesFunction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/build: tet2matrices/libtet2matricesFunction.a
@@ -186,10 +186,10 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/requires: tet2matrices/CMakeFil
 .PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/requires
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean:
-	cd /home/jxt/MyCode/tet2matrices && $(CMAKE_COMMAND) -P CMakeFiles/tet2matricesFunction.dir/cmake_clean.cmake
+	cd /home/jxt/ModalSoundGen/MyCode/tet2matrices && $(CMAKE_COMMAND) -P CMakeFiles/tet2matricesFunction.dir/cmake_clean.cmake
 .PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/clean
 
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/depend:
-	cd /home/jxt/MyCode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jxt/MyCode /home/jxt/MyCode/tet2matrices /home/jxt/MyCode /home/jxt/MyCode/tet2matrices /home/jxt/MyCode/tet2matrices/CMakeFiles/tet2matricesFunction.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jxt/ModalSoundGen/MyCode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jxt/ModalSoundGen/MyCode /home/jxt/ModalSoundGen/MyCode/tet2matrices /home/jxt/ModalSoundGen/MyCode /home/jxt/ModalSoundGen/MyCode/tet2matrices /home/jxt/ModalSoundGen/MyCode/tet2matrices/CMakeFiles/tet2matricesFunction.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tet2matrices/CMakeFiles/tet2matricesFunction.dir/depend
 

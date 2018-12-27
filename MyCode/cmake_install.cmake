@@ -1,4 +1,4 @@
-# Install script for directory: /home/jxt/MyCode
+# Install script for directory: /home/jxt/ModalSoundGen/MyCode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jxt/MyCode/mesh2mesh/cmake_install.cmake")
-  include("/home/jxt/MyCode/tet2matrices/cmake_install.cmake")
-  include("/home/jxt/MyCode/synthesis/cmake_install.cmake")
+  include("/home/jxt/ModalSoundGen/MyCode/mesh2mesh/cmake_install.cmake")
+  include("/home/jxt/ModalSoundGen/MyCode/tet2matrices/cmake_install.cmake")
+  include("/home/jxt/ModalSoundGen/MyCode/synthesis/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jxt/MyCode/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jxt/ModalSoundGen/MyCode/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jxt/MyCode/mesh2mesh
+# Install script for directory: /home/jxt/ModalSoundGen/MyCode/mesh2mesh
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

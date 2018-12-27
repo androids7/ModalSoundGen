@@ -250,7 +250,7 @@ algorithm
 sc/Tuple3.hpp
 /home/jxt/ModalSoundGen/ModalSound/src/utils/sc/Tuple3.hpp
 
-/home/jxt/MyCode/tet2matrices/extract_matrices.cpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.cpp
 iostream
 -
 iomanip
@@ -264,23 +264,23 @@ vector
 map
 -
 utils/term_msg.h
-/home/jxt/MyCode/tet2matrices/utils/term_msg.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/utils/term_msg.h
 geometry/TriangleMesh.hpp
-/home/jxt/MyCode/tet2matrices/geometry/TriangleMesh.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/geometry/TriangleMesh.hpp
 geometry/FixedVtxTetMesh.hpp
-/home/jxt/MyCode/tet2matrices/geometry/FixedVtxTetMesh.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/geometry/FixedVtxTetMesh.hpp
 io/TetMeshReader.hpp
-/home/jxt/MyCode/tet2matrices/io/TetMeshReader.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/io/TetMeshReader.hpp
 io/TglMeshWriter.hpp
-/home/jxt/MyCode/tet2matrices/io/TglMeshWriter.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/io/TglMeshWriter.hpp
 io/MatrixIO.hpp
-/home/jxt/MyCode/tet2matrices/io/MatrixIO.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/io/MatrixIO.hpp
 deformable/stvk.h
-/home/jxt/MyCode/tet2matrices/deformable/stvk.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/deformable/stvk.h
 deformable/fem.hpp
-/home/jxt/MyCode/tet2matrices/deformable/fem.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/deformable/fem.hpp
 
-/home/jxt/MyCode/tet2matrices/modal_eigen.cpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.cpp
 stdint.h
 -
 iostream
@@ -298,17 +298,17 @@ boost/program_options.hpp
 mkl.h
 -
 feast.h
-/home/jxt/MyCode/tet2matrices/feast.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/feast.h
 feast_sparse.h
-/home/jxt/MyCode/tet2matrices/feast_sparse.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/feast_sparse.h
 tbb/parallel_for.h
 -
 tbb/task_scheduler_init.h
 -
 utils/math.hpp
-/home/jxt/MyCode/tet2matrices/utils/math.hpp
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/utils/math.hpp
 utils/term_msg.h
-/home/jxt/MyCode/tet2matrices/utils/term_msg.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/utils/term_msg.h
 
 /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include/mkl.h
 mkl_version.h

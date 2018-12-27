@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.o"
+  "CMakeFiles/synthesisFunction.dir/synthesis.cpp.o"
+  "CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.o"
   "CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o"
   "libsynthesisFunction.pdb"
   "libsynthesisFunction.a"

@@ -26,7 +26,7 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/extract_matrices.cpp.o
  /home/jxt/ModalSoundGen/ModalSound/src/utils/math.hpp
  /home/jxt/ModalSoundGen/ModalSound/src/utils/term_msg.h
  /home/jxt/ModalSoundGen/ModalSound/src/utils/tuple.hpp
- /home/jxt/MyCode/tet2matrices/extract_matrices.cpp
+ /home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.cpp
 tet2matrices/CMakeFiles/tet2matricesFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp.o
  /home/jxt/ModalSoundGen/ModalSound/src/config.h
  /home/jxt/ModalSoundGen/ModalSound/src/deformable/stvk.cpp
@@ -49,7 +49,7 @@ tet2matrices/CMakeFiles/tet2matricesFunction.dir/modal_eigen.cpp.o
  /home/jxt/ModalSoundGen/ModalSound/src/utils/macros.h
  /home/jxt/ModalSoundGen/ModalSound/src/utils/math.hpp
  /home/jxt/ModalSoundGen/ModalSound/src/utils/term_msg.h
- /home/jxt/MyCode/tet2matrices/modal_eigen.cpp
+ /home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.cpp
  /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include/mkl.h
  /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include/mkl_blas.h
  /opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include/mkl_cblas.h

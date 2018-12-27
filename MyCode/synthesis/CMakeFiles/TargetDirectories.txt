@@ -1,0 +1,3 @@
+/home/jxt/MyCode/synthesis/CMakeFiles/rebuild_cache.dir
+/home/jxt/MyCode/synthesis/CMakeFiles/synthesisFunction.dir
+/home/jxt/MyCode/synthesis/CMakeFiles/edit_cache.dir

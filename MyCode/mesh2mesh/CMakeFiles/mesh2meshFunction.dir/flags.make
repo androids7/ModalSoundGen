@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jxt/MyCode/mesh2mesh -I/home/jxt/ModalSoundGen/IsoStuffer/src 
+CXX_INCLUDES = -I/home/jxt/ModalSoundGen/MyCode/mesh2mesh -I/home/jxt/ModalSoundGen/IsoStuffer/src 
 

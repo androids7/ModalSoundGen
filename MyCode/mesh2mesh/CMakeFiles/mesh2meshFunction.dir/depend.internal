@@ -15,17 +15,17 @@ mesh2mesh/CMakeFiles/mesh2meshFunction.dir/DistValProc.cpp.o
  /home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/eig3.h
  /home/jxt/ModalSoundGen/IsoStuffer/src/rigid/DistFunc.hpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/math.hpp
- /home/jxt/MyCode/mesh2mesh/DistValProc.cpp
- /home/jxt/MyCode/mesh2mesh/DistValProc.h
- /home/jxt/MyCode/mesh2mesh/config.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.cpp
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/config.h
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/OctTree.cpp.o
  /home/jxt/ModalSoundGen/IsoStuffer/src/linearalgebra/Tuple3.hpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/arrays.hpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/macros.h
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/math.hpp
- /home/jxt/MyCode/mesh2mesh/OctTree.cpp
- /home/jxt/MyCode/mesh2mesh/OctTree.h
- /home/jxt/MyCode/mesh2mesh/tables.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.cpp
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/tables.h
 mesh2mesh/CMakeFiles/mesh2meshFunction.dir/home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp.o
  /home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.cpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/generic/precision_type.hpp
@@ -68,9 +68,9 @@ mesh2mesh/CMakeFiles/mesh2meshFunction.dir/mesh2mesh.cpp.o
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/math.hpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/strings.hpp
  /home/jxt/ModalSoundGen/IsoStuffer/src/utils/tuple.hpp
- /home/jxt/MyCode/mesh2mesh/DistValProc.h
- /home/jxt/MyCode/mesh2mesh/IsoStuffer.hpp
- /home/jxt/MyCode/mesh2mesh/OctTree.h
- /home/jxt/MyCode/mesh2mesh/config.h
- /home/jxt/MyCode/mesh2mesh/mesh2mesh.cpp
- /home/jxt/MyCode/mesh2mesh/tables.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/DistValProc.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/IsoStuffer.hpp
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/OctTree.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/config.h
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/mesh2mesh.cpp
+ /home/jxt/ModalSoundGen/MyCode/mesh2mesh/tables.h

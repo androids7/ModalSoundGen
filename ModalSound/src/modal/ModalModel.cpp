@@ -22,11 +22,7 @@
 #include "utils/term_msg.h"
 #include "utils/macros.h"
 
-#ifdef USE_MKL
 #   include <mkl.h>
-#else
-#   error ERROR: We use cblas routines provided by MKL so far.
-#endif
 
 using namespace std;
 
@@ -109,6 +105,7 @@ void ModalModel::load_eigenmodes(const char* file)
 void ModalModel::accum_modal_impulse(int vid, const Vector3d* imp, double* out) const
 {
     // out += U'*imp/rho
+    PRINT_MSG("cblas_dgemv(CblasColMajor, CblasTrans, 3, numModes_, invDensity_,&eigenvec_[vid*3], n3_, (const double*)imp, 1, 1., out, 1)\nnumModes_:%d\ninvDensity_:%lf\nn3_:%d\nout:%lf\n",numModes_, invDensity_,n3_,*out);
     cblas_dgemv(CblasColMajor, CblasTrans, 3, numModes_, invDensity_, 
                 &eigenvec_[vid*3], n3_, (const double*)imp, 1, 1., out, 1);
 }

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include -I/home/jxt/MyCode/tet2matrices -I/home/jxt/ModalSoundGen/ModalSound/src 
+CXX_INCLUDES = -I/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include -I/home/jxt/ModalSoundGen/MyCode/tet2matrices -I/home/jxt/ModalSoundGen/ModalSound/src 
 

@@ -80,10 +80,12 @@ void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir)
 
     const vector<double>& omegaD = modal_->damped_omega();
     const vector<double>& c      = modal_->damping_vector();
-
+    PRINT_MSG("print frequency and damping ridio\n");
+    std::ofstream out("out.txt");
     for(int i = 0;i < modal_->num_modes();++ i)
     {
-	cout << omegaD[i] << " " << c[i] << endl;
+	PRINT_MSG("omegaD:%lf c:%lf\n",omegaD[i],c[i]);
+	out << omegaD[i] << " " << c[i] << endl;
 	/*
         const double SS = mForce_[i] / omegaD[i];
         for(int ti = 0;ti < totTicks;++ ti)
@@ -95,6 +97,7 @@ void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir)
             //soundBuffer_[ti] += amp * SS * sin( omegaD[i]*ts );  // sin(omega_d * t)
         }*/
     } // end for
+    out.close();
 
 
 }

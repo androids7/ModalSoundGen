@@ -3,6 +3,7 @@
 
 CMakeFiles/main.dir/main.cpp.o: main.cpp
 CMakeFiles/main.dir/main.cpp.o: mesh2mesh/mesh2mesh.h
+CMakeFiles/main.dir/main.cpp.o: synthesis/synthesis.h
 CMakeFiles/main.dir/main.cpp.o: tet2matrices/extract_matrices.h
 CMakeFiles/main.dir/main.cpp.o: tet2matrices/modal_eigen.h
 

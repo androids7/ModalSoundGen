@@ -1,4 +1,4 @@
-# Install script for directory: /home/jxt/MyCode/tet2matrices
+# Install script for directory: /home/jxt/ModalSoundGen/MyCode/tet2matrices
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

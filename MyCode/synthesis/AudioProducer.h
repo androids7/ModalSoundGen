@@ -1,10 +1,7 @@
-#ifndef AUDIO_PRODUCER_INC
-#   define AUDIO_PRODUCER_INC
-
 #include "sc/Vector3.hpp"
 #include "geometry/Point3.hpp"
 #include "modal/ModalModel.h"
-#include <cstring>
+#include <string>
 
 class AudioProducer
 {
@@ -33,4 +30,3 @@ class AudioProducer
         std::vector<int>    vidS2T_;        // vertex map for surface VID to tet VID
 };
 
-#endif

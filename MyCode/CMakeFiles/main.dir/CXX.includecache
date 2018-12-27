@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/jxt/MyCode/main.cpp
+/home/jxt/ModalSoundGen/MyCode/main.cpp
 mesh2mesh/mesh2mesh.h
-/home/jxt/MyCode/mesh2mesh/mesh2mesh.h
+/home/jxt/ModalSoundGen/MyCode/mesh2mesh/mesh2mesh.h
 tet2matrices/modal_eigen.h
-/home/jxt/MyCode/tet2matrices/modal_eigen.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.h
 tet2matrices/extract_matrices.h
-/home/jxt/MyCode/tet2matrices/extract_matrices.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.h
+synthesis/synthesis.h
+/home/jxt/ModalSoundGen/MyCode/synthesis/synthesis.h
 
-/home/jxt/MyCode/mesh2mesh/mesh2mesh.h
+/home/jxt/ModalSoundGen/MyCode/mesh2mesh/mesh2mesh.h
 
-/home/jxt/MyCode/tet2matrices/extract_matrices.h
+/home/jxt/ModalSoundGen/MyCode/synthesis/synthesis.h
+string
+-
 
-/home/jxt/MyCode/tet2matrices/modal_eigen.h
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/extract_matrices.h
+
+/home/jxt/ModalSoundGen/MyCode/tet2matrices/modal_eigen.h
 

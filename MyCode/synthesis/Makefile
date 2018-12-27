@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jxt/MyCode
+CMAKE_SOURCE_DIR = /home/jxt/ModalSoundGen/MyCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jxt/MyCode
+CMAKE_BINARY_DIR = /home/jxt/ModalSoundGen/MyCode
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jxt/MyCode && $(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/MyCode/CMakeFiles /home/jxt/MyCode/synthesis/CMakeFiles/progress.marks
-	cd /home/jxt/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/MyCode/CMakeFiles 0
+	cd /home/jxt/ModalSoundGen/MyCode && $(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles /home/jxt/ModalSoundGen/MyCode/synthesis/CMakeFiles/progress.marks
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxt/ModalSoundGen/MyCode/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jxt/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/clean
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jxt/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/preinstall
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jxt/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/preinstall
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jxt/MyCode && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jxt/ModalSoundGen/MyCode && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 synthesis/CMakeFiles/synthesisFunction.dir/rule:
-	cd /home/jxt/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/CMakeFiles/synthesisFunction.dir/rule
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f CMakeFiles/Makefile2 synthesis/CMakeFiles/synthesisFunction.dir/rule
 .PHONY : synthesis/CMakeFiles/synthesisFunction.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ synthesisFunction: synthesis/CMakeFiles/synthesisFunction.dir/rule
 
 # fast build rule for target.
 synthesisFunction/fast:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/build
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/build
 .PHONY : synthesisFunction/fast
 
 AudioProducer.o: AudioProducer.cpp.o
@@ -131,7 +131,7 @@ AudioProducer.o: AudioProducer.cpp.o
 
 # target to build an object file
 AudioProducer.cpp.o:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.o
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.o
 .PHONY : AudioProducer.cpp.o
 
 AudioProducer.i: AudioProducer.cpp.i
@@ -140,7 +140,7 @@ AudioProducer.i: AudioProducer.cpp.i
 
 # target to preprocess a source file
 AudioProducer.cpp.i:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.i
 .PHONY : AudioProducer.cpp.i
 
 AudioProducer.s: AudioProducer.cpp.s
@@ -149,7 +149,7 @@ AudioProducer.s: AudioProducer.cpp.s
 
 # target to generate assembly for a file
 AudioProducer.cpp.s:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/AudioProducer.cpp.s
 .PHONY : AudioProducer.cpp.s
 
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.o: home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
@@ -158,7 +158,7 @@ home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.o: home/jxt/ModalSo
 
 # target to build an object file
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
 .PHONY : home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.o
 
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.i: home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
@@ -167,7 +167,7 @@ home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.i: home/jxt/ModalSo
 
 # target to preprocess a source file
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
 .PHONY : home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.i
 
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.s: home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
@@ -176,8 +176,62 @@ home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.s: home/jxt/ModalSo
 
 # target to generate assembly for a file
 home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s:
-	cd /home/jxt/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
 .PHONY : home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.cpp.s
+
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.o: home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.o
+
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.o
+
+# target to build an object file
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.o:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.o
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.o
+
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.i: home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.i
+
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.i
+
+# target to preprocess a source file
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.i:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.i
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.i
+
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.s: home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.s
+
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.s
+
+# target to generate assembly for a file
+home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.s:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.s
+.PHONY : home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.cpp.s
+
+synthesis.o: synthesis.cpp.o
+
+.PHONY : synthesis.o
+
+# target to build an object file
+synthesis.cpp.o:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/synthesis.cpp.o
+.PHONY : synthesis.cpp.o
+
+synthesis.i: synthesis.cpp.i
+
+.PHONY : synthesis.i
+
+# target to preprocess a source file
+synthesis.cpp.i:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/synthesis.cpp.i
+.PHONY : synthesis.cpp.i
+
+synthesis.s: synthesis.cpp.s
+
+.PHONY : synthesis.s
+
+# target to generate assembly for a file
+synthesis.cpp.s:
+	cd /home/jxt/ModalSoundGen/MyCode && $(MAKE) -f synthesis/CMakeFiles/synthesisFunction.dir/build.make synthesis/CMakeFiles/synthesisFunction.dir/synthesis.cpp.s
+.PHONY : synthesis.cpp.s
 
 # Help Target
 help:
@@ -194,6 +248,12 @@ help:
 	@echo "... home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.o"
 	@echo "... home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.i"
 	@echo "... home/jxt/ModalSoundGen/ModalSound/src/generic/precision_type.s"
+	@echo "... home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.o"
+	@echo "... home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.i"
+	@echo "... home/jxt/ModalSoundGen/ModalSound/src/modal/ModalModel.s"
+	@echo "... synthesis.o"
+	@echo "... synthesis.i"
+	@echo "... synthesis.s"
 .PHONY : help
 
 
@@ -205,6 +265,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jxt/MyCode && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jxt/ModalSoundGen/MyCode && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

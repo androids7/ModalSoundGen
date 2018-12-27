@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jxt/ModalSoundGen/ModalSound/src 
+CXX_INCLUDES = -I/home/jxt/ModalSoundGen/ModalSound/src -I/opt/intel/compilers_and_libraries_2017.5.239/linux/mkl/include 
 

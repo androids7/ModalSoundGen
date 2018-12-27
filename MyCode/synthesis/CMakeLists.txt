@@ -3,11 +3,14 @@ include_directories(
     	${Boost_INCLUDE_DIR}
   	${CMAKE_INCLUDE_CURRENT_DIR}
 	${INCLUDE_DIR2}
+	${MKL_INCLUDE_DIR}
 )
+
 AUX_SOURCE_DIRECTORY(. SYN_SRCS)
 add_library(
 	synthesisFunction
 	${SYN_SRCS}
+	${INCLUDE_DIR2}/modal/ModalModel.cpp
 	${INCLUDE_DIR2}/generic/precision_type.cpp
 	${INCLUDE_DIR2}/generic/precision_type.hpp
 )
