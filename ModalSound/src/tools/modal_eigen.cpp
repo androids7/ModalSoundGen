@@ -13,12 +13,7 @@
 #include <algorithm>
 #include <cstdlib>
 #include <boost/program_options.hpp>
-#ifdef USE_MKL
-#   include <mkl.h>
-#else
-#   include "feast.h"
-#   include "feast_sparse.h"
-#endif
+#include <mkl.h>
 #include <tbb/parallel_for.h>
 #include <tbb/task_scheduler_init.h>
 
@@ -318,7 +313,7 @@ int main(int argc, char* argv[])
         PRINT_ERROR("number of eigenvalues is out of range: maximum=%d\n", nrowK-2);
         exit(1);
     }
-
+    numEigv = nrowK-2;
     if ( verbose ) PRINT_MSG("Sparse matrix size: %d\n", nrowK);
 
     // solve the generalized eigen problem using FEAST

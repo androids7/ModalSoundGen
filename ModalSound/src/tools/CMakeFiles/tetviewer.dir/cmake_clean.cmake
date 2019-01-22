@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "modal_eigen_autogen"
+  "CMakeFiles/modal_eigen_autogen.dir/AutogenOldSettings.cmake"
   "tetviewer_autogen"
   "CMakeFiles/tetviewer_autogen.dir/AutogenOldSettings.cmake"
   "extmat_autogen"

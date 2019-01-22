@@ -3,9 +3,11 @@
 /home/jxt/ModalSoundGen/ModalSound/src/CMakeFiles/rebuild_cache.dir
 /home/jxt/ModalSoundGen/ModalSound/src/CMakeFiles/edit_cache.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/edit_cache.dir
+/home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/modal_eigen.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/tetviewer.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/rebuild_cache.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/extmat.dir
+/home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/modal_eigen_autogen.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/tetviewer_autogen.dir
 /home/jxt/ModalSoundGen/ModalSound/src/tools/CMakeFiles/extmat_autogen.dir
 /home/jxt/ModalSoundGen/ModalSound/src/libpython/CMakeFiles/rebuild_cache.dir

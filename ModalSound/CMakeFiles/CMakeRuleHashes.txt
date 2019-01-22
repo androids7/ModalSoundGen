@@ -4,6 +4,7 @@
 ede97ec3cbe4cedc4bbe0bf99fd4e4d8 src/demo/sploosh.pb.cc
 9b28e760a2856255f6e44be2451ab6b3 src/protobuf/sploosh.pb.cc
 713a1df20b57b7b777c1db9b37fbb64d src/tools/CMakeFiles/extmat_autogen
+0bc9b2b6f91333cb850a64b7a5ef011e src/tools/CMakeFiles/modal_eigen_autogen
 a1002457c8deed57b579913edccb0f71 src/tools/CMakeFiles/tetviewer_autogen
 baae534c333a886a56ba5f29c54963d9 src/tools/moc_ModesVisParamsDialog.cpp
 91cf440800b2fb461613d631921fa2fe src/tools/moc_TetViewerCanvas.cpp

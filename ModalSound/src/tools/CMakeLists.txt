@@ -66,5 +66,18 @@ target_link_libraries(extmat
 set_target_properties(extmat 
     PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR})
 # ------------------------------------------------------------------------------
+find_package(TBB REQUIRED)
+FIND_PACKAGE(Boost COMPONENTS program_options REQUIRED)
+find_package(MKL REQUIRED)
+set(MKL_LIBS ${IOMP5_LIBRARY} ${MKL_LIBRARY_RT} ${MKL_LIBRARY_THREAD}  ${MKL_LIBRARY_ILP64} 
+${MKL_LIBRARY} ${OPENMP_LIB})
 
-	
+add_executable(modal_eigen
+	modal_eigen.cpp)
+target_link_libraries(modal_eigen
+	${MKL_LIBS}
+	${Boost_LIBRARIES}
+	 tbb
+)
+set_target_properties(modal_eigen
+ PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR})  

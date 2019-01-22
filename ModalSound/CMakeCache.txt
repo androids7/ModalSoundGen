@@ -357,6 +357,18 @@ Qt5Xml_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Xml
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
+//The directory containing a CMake configuration file for TBB.
+TBB_DIR:PATH=TBB_DIR-NOTFOUND
+
+//Path to a file.
+TBB_INCLUDE_DIRS:PATH=/usr/include
+
+//Path to a library.
+TBB_tbb_LIBRARY_DEBUG:FILEPATH=TBB_tbb_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+TBB_tbb_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libtbb.so
+
 //Value Computed by CMake
 sploosh_BINARY_DIR:STATIC=/home/jxt/ModalSoundGen/ModalSound
 
@@ -552,6 +564,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpro
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython2.7.so][/usr/include/python2.7][v2.7.12(2.7)]
 //Details about finding QGLViewer
 FIND_PACKAGE_MESSAGE_DETAILS_QGLViewer:INTERNAL=[/usr/include/QGLViewer][/usr/lib/x86_64-linux-gnu/libQGLViewer.so][v()]
+//Details about finding TBB
+FIND_PACKAGE_MESSAGE_DETAILS_TBB:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libtbb.so][c ][v4.4()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GLUT_INCLUDE_DIR
@@ -652,6 +666,12 @@ Protobuf_PROTOC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 QGLVIEWER_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QGLVIEWER_LIBRARY
 QGLVIEWER_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_INCLUDE_DIRS
+TBB_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_tbb_LIBRARY_DEBUG
+TBB_tbb_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TBB_tbb_LIBRARY_RELEASE
+TBB_tbb_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Last used Boost_ADDITIONAL_VERSIONS value.
 _Boost_ADDITIONAL_VERSIONS_LAST:INTERNAL=1.51;1.51.0
 //Components requested for this build tree.

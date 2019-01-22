@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeLists.txt"
   "cmake/FindMKL.cmake"
   "cmake/FindQGLViewer.cmake"
+  "cmake/FindTBB.cmake"
   "cmake/UpdateCacheVariable.cmake"
   "cmake/sploosh_external.cmake"
   "cmake/sploosh_utils.cmake"
@@ -97,8 +98,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/tools/CMakeFiles/modal_eigen.dir/DependInfo.cmake"
   "src/tools/CMakeFiles/tetviewer.dir/DependInfo.cmake"
   "src/tools/CMakeFiles/extmat.dir/DependInfo.cmake"
+  "src/tools/CMakeFiles/modal_eigen_autogen.dir/DependInfo.cmake"
   "src/tools/CMakeFiles/tetviewer_autogen.dir/DependInfo.cmake"
   "src/tools/CMakeFiles/extmat_autogen.dir/DependInfo.cmake"
   "src/libpython/CMakeFiles/sploosh.dir/DependInfo.cmake"

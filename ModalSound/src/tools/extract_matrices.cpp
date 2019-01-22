@@ -227,17 +227,10 @@ static void output_geometry()
     map<int, int> idmap;
     mesh.surface_id_map(idmap);
     const map<int, int>::iterator end = idmap.end();
-    const valarray<double>& area = tglmesh.vertex_areas();
-
-    fout << idmap.size() << endl;
-    fout << setprecision(20);
+    fout << mesh.num_fixed_vertices() << ' ' << idmap.size() <<endl;
     for(map<int,int>::iterator it = idmap.begin();it != end;++ it)
     {
-        Vector3d n = vtxNml[it->second];
-        n.normalize();
-        fout << it->first << ' ' << it->second << ' '
-             << n.x << ' ' << n.y << ' ' << n.z << ' '
-             << area[it->second] << endl;
+        fout << it->first << ' ' << it->second << endl;
     }
     fout.close();
 }

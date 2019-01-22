@@ -41,7 +41,7 @@ class AudioProducer
         QAudioOutput*       audioOutput_;
 
         ModalModel*         modal_;
-
+	QString 	    outputname;
         int                 numFixed_;
         std::vector<double> mForce_;        // force in modal space
         double              normalizeScale_;

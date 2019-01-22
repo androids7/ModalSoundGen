@@ -16,6 +16,7 @@ AudioProducer::AudioProducer(const QSettings& settings, const QDir& dataDir):
 {
     ////// load data
     QString filename;
+    outputname = settings.value("output/name").toString();
     // --- load vertex map ---
     {
         QString ff = settings.value("modal/vtx_map").toString();
@@ -40,13 +41,13 @@ AudioProducer::AudioProducer(const QSettings& settings, const QDir& dataDir):
     mForce_.resize( modal_->num_modes() );
 
     // --- load moments ---
-    {
+    /*{
         QString ff = settings.value("transfer/moments").toString();
         QFileInfo fInfo(ff);
         filename = fInfo.isRelative() ? dataDir.filePath(ff) : ff;
     }
     load_moments(filename);
-
+	
     // --- setup audio output device ---
     const QString devStr = settings.value("audio/device").toString();
 
@@ -62,15 +63,15 @@ AudioProducer::AudioProducer(const QSettings& settings, const QDir& dataDir):
     }
 
     // --- allocate data buffer ---
-    init();
+    init();*/
 }
 
 AudioProducer::~AudioProducer()
 {
-    delete device_;
-    delete audioOutput_;
+//    delete device_;
+  //  delete audioOutput_;
 
-    for(size_t i = 0;i < transfer_.size();++ i) delete transfer_[i];
+    //for(size_t i = 0;i < transfer_.size();++ i) delete transfer_[i];
 }
 
 void AudioProducer::load_moments(const QString& filename)
@@ -168,7 +169,7 @@ void AudioProducer::init()
 
 void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam)
 {
-    audioIO_.close();
+    //audioIO_.close();
 
     // ====== fill the buffer ======
     //// for now, only do the single-channel synthesis
@@ -186,10 +187,10 @@ void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir, const Point3d
     }
     */
 
-    audioIO_.open( QIODevice::ReadOnly );
-    audioOutput_->reset();
+    //audioIO_.open( QIODevice::ReadOnly );
+    //audioOutput_->reset();
 
-    audioOutput_->start( &audioIO_ );
+    //audioOutput_->start( &audioIO_ );
 }
 
 void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam)
@@ -199,18 +200,27 @@ void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d
     modal_->accum_modal_impulse( vidS2T_[tri.x]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.y]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.z]-numFixed_, &dir, mForce_.data() );
-
+    printf("accum OK\n");
     const vector<double>& omegaD = modal_->damped_omega();
     const vector<double>& c      = modal_->damping_vector();
 
+    std::ofstream out(outputname.toStdString().c_str());
+    for(int i = 0;i < modal_->num_modes();++ i)
+    {
+	//PRINT_MSG("omegaD:%lf c:%lf\n",omegaD[i],c[i]);
+	out << omegaD[i] << " " << c[i] << endl;
+    }
+    out.close();
+
+/*
     //// multiply with the impulse response of each modes
-    memset( soundBuffer_.data(), 0, sizeof(double)*soundBuffer_.size() );
+    //memset( soundBuffer_.data(), 0, sizeof(double)*soundBuffer_.size() );
     const int totTicks = SR*TS;
     for(int i = 0;i < modal_->num_modes();++ i)
     {
-        FMMTransferEval::TComplex trans = transfer_[i]->eval( cam );
+      //  FMMTransferEval::TComplex trans = transfer_[i]->eval( cam );
 
-        const double SS = mForce_[i] * abs(trans) / omegaD[i];
+        const double SS = mForce_[i] / omegaD[i];
 
         for(int ti = 0;ti < totTicks;++ ti)
         {
@@ -237,6 +247,6 @@ void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d
         const qint16 value = static_cast<qint16>( soundBuffer_[ti] * normalizeScale_ * 32767 );
         qToLittleEndian<qint16>(value, ptr);
         ptr += channelBytes;
-    }
+    }*/
 }
 

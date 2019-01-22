@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named modal_eigen
+
+# Build rule for target.
+modal_eigen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 modal_eigen
+.PHONY : modal_eigen
+
+# fast build rule for target.
+modal_eigen/fast:
+	$(MAKE) -f src/tools/CMakeFiles/modal_eigen.dir/build.make src/tools/CMakeFiles/modal_eigen.dir/build
+.PHONY : modal_eigen/fast
+
+#=============================================================================
 # Target rules for targets named tetviewer
 
 # Build rule for target.
@@ -135,6 +148,19 @@ extmat: cmake_check_build_system
 extmat/fast:
 	$(MAKE) -f src/tools/CMakeFiles/extmat.dir/build.make src/tools/CMakeFiles/extmat.dir/build
 .PHONY : extmat/fast
+
+#=============================================================================
+# Target rules for targets named modal_eigen_autogen
+
+# Build rule for target.
+modal_eigen_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 modal_eigen_autogen
+.PHONY : modal_eigen_autogen
+
+# fast build rule for target.
+modal_eigen_autogen/fast:
+	$(MAKE) -f src/tools/CMakeFiles/modal_eigen_autogen.dir/build.make src/tools/CMakeFiles/modal_eigen_autogen.dir/build
+.PHONY : modal_eigen_autogen/fast
 
 #=============================================================================
 # Target rules for targets named tetviewer_autogen
@@ -222,8 +248,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... modal_eigen"
 	@echo "... tetviewer"
 	@echo "... extmat"
+	@echo "... modal_eigen_autogen"
 	@echo "... tetviewer_autogen"
 	@echo "... extmat_autogen"
 	@echo "... sploosh"

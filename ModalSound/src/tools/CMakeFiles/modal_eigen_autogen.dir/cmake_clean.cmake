@@ -5,10 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetviewer_autogen.dir/AutogenOldSettings.cmake"
   "extmat_autogen"
   "CMakeFiles/extmat_autogen.dir/AutogenOldSettings.cmake"
-  "CMakeFiles/extmat_autogen"
+  "CMakeFiles/modal_eigen_autogen"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )
-  include(CMakeFiles/extmat_autogen.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/modal_eigen_autogen.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
