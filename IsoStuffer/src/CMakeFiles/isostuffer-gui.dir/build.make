@@ -399,14 +399,14 @@ src/isostuffer-gui: src/CMakeFiles/isostuffer-gui.dir/build.make
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libglut.so
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libXmu.so
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libXi.so
-src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Xml.so.5.9.6
-src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5OpenGL.so.5.9.6
+src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Xml.so.5.9.7
+src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5OpenGL.so.5.9.7
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libQGLViewer.so
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libGLU.so
 src/isostuffer-gui: /usr/lib/x86_64-linux-gnu/libGL.so
-src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Widgets.so.5.9.6
-src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Gui.so.5.9.6
-src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Core.so.5.9.6
+src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Widgets.so.5.9.7
+src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Gui.so.5.9.7
+src/isostuffer-gui: /home/jxt/anaconda3/lib/libQt5Core.so.5.9.7
 src/isostuffer-gui: src/CMakeFiles/isostuffer-gui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jxt/ModalSoundGen/IsoStuffer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable isostuffer-gui"
 	cd /home/jxt/ModalSoundGen/IsoStuffer/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/isostuffer-gui.dir/link.txt --verbose=$(VERBOSE)

@@ -80,10 +80,10 @@ class TriangleMesh
         //! Return the current number of triangles
         int add_triangle(unsigned int v0, unsigned int v1, unsigned int v2)
         {
-            assert(v0 != v1 && v0 != v2 && v1 != v2);
-            assert(v0 < m_vertices.size() &&
+            if (v0 != v1 && v0 != v2 && v1 != v2 &&
+            	   v0 < m_vertices.size() &&
                    v1 < m_vertices.size() &&
-                   v2 < m_vertices.size());
+                   v2 < m_vertices.size())
             m_triangles.push_back(Tuple3ui(v0, v1, v2));
             return m_triangles.size();
         }
