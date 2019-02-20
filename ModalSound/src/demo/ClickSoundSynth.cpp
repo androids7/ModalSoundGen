@@ -21,11 +21,14 @@
 
 using namespace std;
 
-class ClickSoundViewer : public QGLViewer
+class ClickSoundViewer
 {
     public:
         ClickSoundViewer(const char* inifile);
+	//////////////////////////////////////////////////////////////////
+	void generate_sounds();
 
+	/////////////////////////////////////////////////////////////////////
         ~ClickSoundViewer()
         {
             delete audio_;
@@ -41,8 +44,11 @@ class ClickSoundViewer : public QGLViewer
     private:
         void init_gl();
         void load_mesh(const QString& meshfile);
+        ////////////////////////////////////////////////////////////////////////
+	QString             selected_Tri;
 
-        void draw_mesh();
+	//////////////////////////////////////////////////////////////////////
+        void draw_mesh();	
         void draw_obj();
         void draw_triangle_normal();
 
@@ -82,6 +88,9 @@ ClickSoundViewer::ClickSoundViewer(const char* inifile) :
     load_mesh(settings.value("mesh/surface_mesh").toString());
 
     audio_ = new AudioProducer(settings, dataDir_);
+	////////////////////////////////////////////////////////
+	selected_Tri = settings.value("collisions/ID").toString();
+	///////////////////////////////////////////////////////////
 }
 
 void ClickSoundViewer::load_mesh(const QString& meshfile)
@@ -104,21 +113,22 @@ void ClickSoundViewer::load_mesh(const QString& meshfile)
 
 void ClickSoundViewer::init()
 {
-    init_gl();      // initialize OpenGL
+//    init_gl();      // initialize OpenGL
 
-    resize(1024, 756);
-    camera()->setZNearCoefficient(0.0001f);
-    camera()->setZClippingCoefficient(100.f);
+  //  resize(1024, 756);
+    //camera()->setZNearCoefficient(0.0001f);
+    //camera()->setZClippingCoefficient(100.f);
 }
 
 void ClickSoundViewer::draw()
-{
+{/*
     draw_mesh();
     if ( selTriId_ >= 0 ) draw_triangle_normal();
+*/
 }
 
 void ClickSoundViewer::draw_obj()
-{
+{/*
     const vector<Point3d>&  vtx = mesh_.vertices();
     const vector<Tuple3ui>& tgl = mesh_.surface_indices();
     const vector<Vector3d>& nml = mesh_.normals();
@@ -129,10 +139,10 @@ void ClickSoundViewer::draw_obj()
     glVertexPointer(3, GL_DOUBLE, 0, (const GLvoid*)(vtx.data()));
     glNormalPointer(GL_DOUBLE, 0, (const GLvoid*)(nml.data()));
     glDrawElements(GL_TRIANGLES, tgl.size()*3, GL_UNSIGNED_INT, (const GLvoid*)(tgl.data()));
-}
+*/}
 
 void ClickSoundViewer::draw_mesh()
-{
+{/*
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glColor3f(1.f, 1.f, 0.f);
     glEnable(GL_LIGHTING);
@@ -145,11 +155,11 @@ void ClickSoundViewer::draw_mesh()
         glColor3f(0.8f, 0.8f, 0.8f);
         glDisable(GL_LIGHTING);
         draw_obj();
-    }
+    }*/
 }
 
 void ClickSoundViewer::draw_triangle_normal()
-{
+{/*
     const int tid = selTriId_;
     const vector<Point3d>&  vtx = mesh_.vertices();
     const vector<Tuple3ui>& tgl = mesh_.surface_indices();
@@ -164,11 +174,12 @@ void ClickSoundViewer::draw_triangle_normal()
     drawArrow( qglviewer::Vec(end.x, end.y, end.z), 
                qglviewer::Vec(ctr.x, ctr.y, ctr.z),
                sqrt(area)*0.8 );
+*/
 }
 
 void ClickSoundViewer::keyPressEvent(QKeyEvent* e)
 {
-    const Qt::KeyboardModifiers modifiers = e->modifiers();
+  /*  const Qt::KeyboardModifiers modifiers = e->modifiers();
 
     if ( e->key() == Qt::Key_W && modifiers == Qt::NoButton )
     {
@@ -177,10 +188,11 @@ void ClickSoundViewer::keyPressEvent(QKeyEvent* e)
     }
     else
         QGLViewer::keyPressEvent(e);
+*/
 }
 
 void ClickSoundViewer::drawWithNames()
-{
+{/*
     glEnableClientState(GL_VERTEX_ARRAY);
     glDisableClientState(GL_NORMAL_ARRAY);
 
@@ -192,10 +204,11 @@ void ClickSoundViewer::drawWithNames()
         glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (const GLvoid*)&tgl[i]); 
         glPopName();
     }
+*/
 }
 
 void ClickSoundViewer::postSelection(const QPoint&)
-{
+{/*
     selTriId_ = selectedName();
     //cout << "selected triangle ID:  " << selTriId_ << endl;
 
@@ -215,10 +228,25 @@ void ClickSoundViewer::postSelection(const QPoint&)
     }
     
     if ( selTriId_ >= 0 ) update();
+
+*/}
+void ClickSoundViewer::generate_sounds()
+{   
+        int selTriId = selected_Tri.toInt();
+	PRINT_MSG("selTriID:%d\n",selTriId);
+	const Point3d camPos(0,0,0);
+        const vector<Point3d>&  vtx = mesh_.vertices();
+        const vector<Tuple3ui>& tgl = mesh_.surface_indices();
+        Vector3d nml = Triangle<double>::normal(
+                vtx[tgl[selTriId].x],
+                vtx[tgl[selTriId].y],
+                vtx[tgl[selTriId].z] );
+        nml.normalize();
+        audio_->play( mesh_.triangle_ids(selTriId), nml, camPos);
 }
 
 void ClickSoundViewer::init_gl()
-{
+{/*
 #ifdef __linux
     int dummy = 0;
     glutInit(&dummy, NULL);
@@ -247,16 +275,16 @@ void ClickSoundViewer::init_gl()
     glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-}
+*/}
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 static void list_audio_devices()
-{
+{/*
     cout << "Detected audio devices: " << endl;
     foreach(const QAudioDeviceInfo &deviceInfo, 
             QAudioDeviceInfo::availableDevices(QAudio::AudioOutput)) 
         cout << "  + \"" << deviceInfo.deviceName().toStdString() << '"' << endl;
-}
+*/}
 
 int main(int argc, char* argv[])
 {
@@ -274,12 +302,15 @@ int main(int argc, char* argv[])
         return 0;
     }
 
-    QApplication app(argc, argv);
+//   QApplication app(argc, argv);
     ClickSoundViewer viewer(argv[1]);
 
     //viewer.setWindowTitle(title.c_str());
-    viewer.show();
+    //viewer.show();
 
-    return app.exec();
+    //return app.exec();
+    viewer.generate_sounds();    
+  //  app.exit(0);
+    return 0;
 }
 

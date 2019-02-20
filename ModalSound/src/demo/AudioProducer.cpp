@@ -208,7 +208,7 @@ void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d
     for(int i = 0;i < modal_->num_modes();++ i)
     {
 	//PRINT_MSG("omegaD:%lf c:%lf\n",omegaD[i],c[i]);
-	out << omegaD[i] << " " << c[i] << endl;
+	out << mForce_[i] << " " << omegaD[i] << " " << c[i] << endl;
     }
     out.close();
 

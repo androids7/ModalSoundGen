@@ -1,2 +1,10 @@
+# IsoStuffer
+https://github.com/cxzheng/ModalSound
+mesh to tet
 # ModelSound
-在https://github.com/cxzheng/ModalSound 的基础上修改，用于训练数据生成
+https://github.com/cxzheng/ModalSound
+modal synthesis
+# voxelizer
+https://github.com/kctess5/voxelizer
+
+
