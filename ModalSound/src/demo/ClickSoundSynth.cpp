@@ -89,7 +89,7 @@ ClickSoundViewer::ClickSoundViewer(const char* inifile) :
 
     audio_ = new AudioProducer(settings, dataDir_);
 	////////////////////////////////////////////////////////
-	selected_Tri = settings.value("collisions/ID").toString();
+//	selected_Tri = settings.value("collisions/ID").toString();
 	///////////////////////////////////////////////////////////
 }
 
@@ -232,17 +232,27 @@ void ClickSoundViewer::postSelection(const QPoint&)
 */}
 void ClickSoundViewer::generate_sounds()
 {   
-        int selTriId = selected_Tri.toInt();
-	PRINT_MSG("selTriID:%d\n",selTriId);
+        int selTriId;
+	//PRINT_MSG("selTriID:%d\n",selTriId);
 	const Point3d camPos(0,0,0);
         const vector<Point3d>&  vtx = mesh_.vertices();
         const vector<Tuple3ui>& tgl = mesh_.surface_indices();
-        Vector3d nml = Triangle<double>::normal(
+
+
+	for(int i = 0;i < mesh_.num_triangles();i++){
+		PRINT_MSG("index:%d\n",i);
+		selTriId = i;
+		Vector3d nml = Triangle<double>::normal(
                 vtx[tgl[selTriId].x],
                 vtx[tgl[selTriId].y],
                 vtx[tgl[selTriId].z] );
-        nml.normalize();
-        audio_->play( mesh_.triangle_ids(selTriId), nml, camPos);
+        	nml.normalize();
+		audio_->play( mesh_.triangle_ids(selTriId), nml, camPos,selTriId);	
+
+	}
+        
+	PRINT_MSG("mesh_triangle_size:%d\n",mesh_.num_triangles());
+        
 }
 
 void ClickSoundViewer::init_gl()

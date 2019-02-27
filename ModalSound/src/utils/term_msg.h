@@ -31,7 +31,7 @@
  * =====================================================================================
  */
 #ifndef TERM_MSG_H
-#   define TERM_MSG_H
+#define TERM_MSG_H
 
 #define TERM_COLOR_BEGIN     "\033["
 #define TERM_COLOR_END       "\033[0m"
@@ -71,7 +71,8 @@
             fprintf(stderr, __VA_ARGS__);                   \
             fprintf(stderr, TERM_COLOR_END);                \
         }
-
+#define PRINT_MSG(...)  ;
+/*
 #define PRINT_MSG(...)                                     \
         {                                                  \
             printf("%s%d;%dmMESSAGE:%s %s%dm",             \
@@ -81,5 +82,6 @@
             printf(__VA_ARGS__);                           \
             printf(TERM_COLOR_END);                        \
         }
-
+*/
 #endif
+

@@ -167,13 +167,13 @@ void AudioProducer::init()
     audioOutput_ = new QAudioOutput( *device_, format_ );
 }
 
-void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam)
+void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam,int ID)
 {
     //audioIO_.close();
 
     // ====== fill the buffer ======
     //// for now, only do the single-channel synthesis
-    single_channel_synthesis(tri, dir, cam);
+    single_channel_synthesis(tri, dir, cam,ID);
     /*
     unsigned char *ptr = reinterpret_cast<unsigned char *>(buffer_.data());
     const int channelBytes = format_.sampleSize() / 8;
@@ -193,18 +193,21 @@ void AudioProducer::play(const Tuple3ui& tri, const Vector3d& dir, const Point3d
     //audioOutput_->start( &audioIO_ );
 }
 
-void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam)
+void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam,int ID)
 {
+    //printf("accum OK\n");
+    QString selectID = QString::number(ID);
+    //printf("accum OK\n");
     //// force in modal space
     memset( mForce_.data(), 0, sizeof(double)*mForce_.size() );
     modal_->accum_modal_impulse( vidS2T_[tri.x]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.y]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.z]-numFixed_, &dir, mForce_.data() );
-    printf("accum OK\n");
+    //printf("accum OK\n");
     const vector<double>& omegaD = modal_->damped_omega();
     const vector<double>& c      = modal_->damping_vector();
 
-    std::ofstream out(outputname.toStdString().c_str());
+    std::ofstream out((outputname + "/out/" + selectID + ".out").toStdString().c_str());
     for(int i = 0;i < modal_->num_modes();++ i)
     {
 	//PRINT_MSG("omegaD:%lf c:%lf\n",omegaD[i],c[i]);

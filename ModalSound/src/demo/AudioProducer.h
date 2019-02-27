@@ -19,14 +19,14 @@ class AudioProducer
 
         ~AudioProducer();
 
-        void play(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam);
+        void play(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam,int ID);
 
     private:
         void init();
         void enable_stereo(bool stereo);
         void load_vertex_map(const QString& filename);
         // synthesize sound just for single channel (no stereo sound)
-        void single_channel_synthesis(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam);;
+        void single_channel_synthesis(const Tuple3ui& tri, const Vector3d& dir, const Point3d& cam,int ID);
 
         void load_moments(const QString& filename);
 

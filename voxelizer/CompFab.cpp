@@ -240,22 +240,40 @@ void CompFab::IndexVoxelGridStruct::save_binvox(const char * filename)
     // Open file
     std::ofstream output(filename, std::ios::out | std::ios::binary);
     assert(output);
-    
+    std::string s = filename;
+    s += ".csv";
+    std::ofstream soutput(s, std::ios::out | std::ios::binary);
+    assert(soutput);
     // Write ASCII header
-    output <<  m_dimX << " " << m_dimY << " " << m_dimZ << "" << std::endl;
+    //output <<  m_dimX << " " << m_dimY << " " << m_dimZ << "" << std::endl;
 
-
+    int dx[6] = {0,0,0,0,-1,1};
+    int dy[6] = {0,0,-1,1,0,0};
+    int dz[6] = {-1,1,0,0,0,0};
     // Write Data
     for (size_t x = 0; x < m_dimX; x++){
-        for (size_t z = 0; z < m_dimY; z++){
-            for (size_t y = 0; y < m_dimZ; y++){
+        for (size_t z = 0; z < m_dimZ; z++){
+            for (size_t y = 0; y < m_dimY; y++){
                 output << isInside(x, y, z) << std::endl;
+		if (isInside(x,y,z) == -1)
+			continue;
+		bool isSurface=false;
+		for(int i = 0;i < 6;i++){
+			int xx=x+dx[i],yy=y+dy[i],zz=z+dz[i];
+			if (xx < 0 || xx >= m_dimX || yy < 0 || yy >= m_dimY ||zz < 0 || zz >= m_dimZ)
+				isSurface = true;
+			else if (isInside(xx,yy,zz) == -1)
+				isSurface = true;
+		}
+		if (isSurface)
+			soutput << x << "," << y << "," << z << "," <<  isInside(x, y, z) << std::endl;
             }
         }
     }
 
     // Write rest
     output.close();
+    soutput.close();
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
