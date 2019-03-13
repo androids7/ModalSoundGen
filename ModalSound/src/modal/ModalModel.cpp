@@ -105,7 +105,7 @@ void ModalModel::load_eigenmodes(const char* file)
 void ModalModel::accum_modal_impulse(int vid, const Vector3d* imp, double* out) const
 {
     // out += U'*imp/rho
-//    PRINT_MSG("cblas_dgemv(CblasColMajor, CblasTrans, 3, numModes_, invDensity_,&eigenvec_[vid*3], n3_, (const double*)imp, 1, 1., out, 1)\neigenvec_.size():%d\nnumModes_:%d\nn3_:%d\nvid:%d\n",eigenvec_.size(), numModes_,n3_,vid);
+ //   printf("cblas_dgemv(CblasColMajor, CblasTrans, 3, numModes_, invDensity_,&eigenvec_[vid*3], n3_, (const double*)imp, 1, 1., out, 1)\neigenvec_.size():%d\nnumModes_:%d\nn3_:%d\nvid:%d\n",eigenvec_.size(), numModes_,n3_,vid);
     cblas_dgemv(CblasColMajor, CblasTrans, 3, numModes_, invDensity_, 
                 &eigenvec_[vid*3], n3_, (const double*)imp, 1, 1., out, 1);
 }

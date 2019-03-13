@@ -131,12 +131,11 @@ bool loadMesh(const char *filename, unsigned int dim)
 	} else {
 		spacing = bbZ/(double)(dim-2);
 	}
-	//printf("bbx:%lf,bby:%lf,bbz:%lf\n",bbX,bbY,bbZ);
+	printf("bbx:%lf,bby:%lf,bbz:%lf\n",bbX,bbY,bbZ);
 	CompFab::Vec3 hspacing(0.5*spacing, 0.5*spacing, 0.5*spacing);
-	//printf("spacing:%lf\n",spacing);
+	printf("spacing:%lf\n",spacing);
 	g_voxelGrid = new CompFab::VoxelGrid(bbMin-hspacing, dim, dim, dim, spacing);
 ///////////////////////////////////////////////////////////////////////////
-	tempMesh->save("normalized.obj");
 	g_index_voxelGrid =  new CompFab::IndexVoxelGrid(bbMin-hspacing, dim, dim, dim, spacing);
 ////////////////////////////////////////////////////////////////////////////
 
@@ -182,7 +181,7 @@ bool save(VoxelizerArgs *args) {
 			break;
 		case binvox:
 			g_voxelGrid->save_binvox((args->output + ".binvox").c_str());
-			g_index_voxelGrid->save_binvox((args->output + ".index").c_str());
+			//g_index_voxelGrid->save_binvox((args->output + ".index").c_str());
 			break;
 		default:
 			args->debug(0) << "Failed to save - no file type specified." << std::endl;

@@ -16,7 +16,7 @@ AudioProducer::AudioProducer(const QSettings& settings, const QDir& dataDir):
 {
     ////// load data
     QString filename;
-    outputname = settings.value("output/name").toString();
+    dataDir_ = dataDir;
     // --- load vertex map ---
     {
         QString ff = settings.value("modal/vtx_map").toString();
@@ -200,14 +200,15 @@ void AudioProducer::single_channel_synthesis(const Tuple3ui& tri, const Vector3d
     //printf("accum OK\n");
     //// force in modal space
     memset( mForce_.data(), 0, sizeof(double)*mForce_.size() );
+printf("%d %d %d\n",tri.x,tri.y,tri.z);
     modal_->accum_modal_impulse( vidS2T_[tri.x]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.y]-numFixed_, &dir, mForce_.data() );
     modal_->accum_modal_impulse( vidS2T_[tri.z]-numFixed_, &dir, mForce_.data() );
-    //printf("accum OK\n");
+    printf("accum OK\n");
     const vector<double>& omegaD = modal_->damped_omega();
     const vector<double>& c      = modal_->damping_vector();
 
-    std::ofstream out((outputname + "/out/" + selectID + ".out").toStdString().c_str());
+    std::ofstream out(dataDir_.filePath(selectID).toStdString().c_str());
     for(int i = 0;i < modal_->num_modes();++ i)
     {
 	//PRINT_MSG("omegaD:%lf c:%lf\n",omegaD[i],c[i]);

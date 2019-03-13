@@ -274,7 +274,6 @@ int main(int argc, char* argv[])
     tbb::task_scheduler_init tbbInit;
 
     parse_cmd(argc, argv);
-
     //// load the data
     int nrowK, ncolK;
     uint8_t c = read_csc_dmatrix(stiffMFile.c_str(), ptrrow[0],
@@ -313,7 +312,6 @@ int main(int argc, char* argv[])
         PRINT_ERROR("number of eigenvalues is out of range: maximum=%d\n", nrowK-2);
         exit(1);
     }
-    numEigv = nrowK-2;
     if ( verbose ) PRINT_MSG("Sparse matrix size: %d\n", nrowK);
 
     // solve the generalized eigen problem using FEAST

@@ -237,6 +237,7 @@ CompFab::IndexVoxelGridStruct::~IndexVoxelGridStruct()
 // void write_binvox(const char * filename) 
 void CompFab::IndexVoxelGridStruct::save_binvox(const char * filename)
 {
+
     // Open file
     std::ofstream output(filename, std::ios::out | std::ios::binary);
     assert(output);

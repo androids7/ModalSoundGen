@@ -238,7 +238,7 @@ void ClickSoundViewer::generate_sounds()
         const vector<Point3d>&  vtx = mesh_.vertices();
         const vector<Tuple3ui>& tgl = mesh_.surface_indices();
 
-
+	
 	for(int i = 0;i < mesh_.num_triangles();i++){
 		PRINT_MSG("index:%d\n",i);
 		selTriId = i;
